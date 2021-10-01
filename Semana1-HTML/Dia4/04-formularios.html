@@ -60,27 +60,57 @@
             Si esta de acuerdo con los terminos y condiciones -->
             <!-- label: es un texto que acompaña a nuestro input -->
             <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre" >
+            <input 
+                id="nombre" 
+                name="nombre" 
+                type="text" 
+                placeholder="Ingrese su nombre" >
             <br>
             <br>
             <label for="apellido">Apellido</label>
-            <input id="apellido" name="apellido" type="text" placeholder="Ingrese su apellido" >
+            <input 
+                id="apellido" 
+                name="apellido" 
+                type="text" 
+                placeholder="Ingrese su apellido" >
             <br>
             <br>
+            <!-- min y max para definir parametros y evitar errores -->
+            <!-- permite poner un valor por defecto -->
             <label for="fecha_nacimiento" >Fecha de nacimiento</label>
-            <input id="fecha_nacimiento" name="fecha_nacimiento" type="date">
+            <input 
+                id="fecha_nacimiento" 
+                name="fecha_nacimiento" 
+                type="date"
+                value="2021-30-09"
+                min="2021-01-01"
+                max="2022-12-01"
+            >
             <br>
             <br>
             <label for="correo">Correo</label>
-            <input id="correo" name="correo" type="email" placeholder="ingrese un correo">
+            <input 
+                id="correo" 
+                name="correo" 
+                type="email" 
+                placeholder="ingrese un correo">
             <br>
             <br>
             <label for="password">Password</label>
-            <input id="password" name="password" type="password" placeholder="Ingrese su password">
+            <input 
+                id="password" 
+                name="password" 
+                type="password" 
+                placeholder="Ingrese su password">
             <br>
             <br>
             <label for="celular">Celular</label>
-            <input id="celular" name="celular" maxlength="9" type="tel"  placeholder="ingrese su celular">
+            <input 
+                id="celular" 
+                name="celular" 
+                maxlength="9" 
+                type="tel"  
+                placeholder="ingrese su celular">
             <br>
             <br>
             <!-- cuando uno quiere buscar su pais se despliega una lista
@@ -116,7 +146,16 @@
             <br>
             <br>
             <!-- agregamos un textarea: es un input el cual me permite poner mucho texto -->
-            <textarea id="texto" name="texto" placeholder="Ingrese un texto" rows="10" cols="35" maxlength="140" minlength="30" ></textarea>
+            <textarea 
+                id="texto" 
+                name="texto" 
+                placeholder="Ingrese un texto" 
+                rows="10" 
+                cols="35" 
+                maxlength="140" 
+                minlength="30" >
+            </textarea>
+    
             <br>
             <br>
             <button type="submit">Registrarse</button>
