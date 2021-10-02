@@ -9,6 +9,8 @@ body{
     align-items: center ;
     justify-content: center;
     height: 100vh;
+   
+
     
     
 }
@@ -97,6 +99,23 @@ body{
 
     /* el atributo para cambiar el tamaño del texto es font-size */
     font-size: 12px;
+
+}
+.contenedor_plan h5 {
+    width: 80px;
+    height: 20px;
+    display:inline-block;
+    margin: 0px;
+    outline: none;
+
+}
+.contenedor_plan p{
+    width: 80%;
+    height: 20px;
+    display:inline-block;
+    margin: 0px;
+    outline: none;
+
 
 }
 
