@@ -5,6 +5,11 @@ body{
     font-family: Helvetica;
     background: url("../img/pattern-background-desktop.svg") no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    height: 100vh;
+    
     
 }
 .contenedor{
@@ -19,7 +24,8 @@ body{
 }
 .contenedor_texto{
         /* padding : nos genera un espacio desde adentro hacia afuera */
-        padding: 12px;
+        padding: 50px;
+        text-align: center;
 }
 .imagen_fondo{
     border-top-left-radius: 8px;
@@ -35,14 +41,66 @@ body{
     border-radius: 8px;
     width: 100%;
     cursor: pointer;
+    font-weight: bold;
+
 
     /* shadow  https://cssgenerator.org/box-shadow-css-generator.html  */ 
+
     box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
     -webkit-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
     -moz-box-shadow: -4px 8px 32px -2px rgba(56, 42, 225, 0.41);
+}
 
-
-
-
+.boton_cancelar{
+/* Existe algo llamado margin
+    margin: arriba - abajo - izquierda - derecha
+    margin-top: arriba
+    margin-botton: abajo
+    margin-left: izquierda
+    margin-right: derecha */
+    margin-top: 20px;
+    background-color:transparent;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    /* El peso del texto va de 100 a 900 y ademas tiene bold */
+    font-weight: bold;
 
 }
+
+.contenedor_detalle{
+    display: flex;
+    /* ordernar los elementos de manera vertical
+    este puede recibir 3 tipos de alineacion
+    1) flex-start
+    2) center
+    3) flex-end */
+    align-items: center ;
+    /* justify-content: es la forma de alinear mis elementos
+    de manera horizontal
+    1) flex-start 
+    2) center
+    3) space-between
+    4) space-around
+    5) space-evenly
+    6) flex-end */
+    justify-content: space-between;
+    background-color:rgba(223, 222, 235, 0.41);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+/* para acceder a un elemento hijo simplemente debo poner su tipo de sele */
+.contenedor_detalle a{
+    text-decoration: none;
+    font-weight: bold;
+
+    /* el atributo para cambiar el tamaño del texto es font-size */
+    font-size: 12px;
+
+}
+
+
+
+
+
